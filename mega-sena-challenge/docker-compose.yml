@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  ui:
+    container_name: mega-sena-challenge
+    build: './'
+    volumes:
+      - ./:/mega-sena-challenge
+      - ./node_modules:/mega-sena-challenge/node_modules
+    ports:
+      - '3000:3000'
